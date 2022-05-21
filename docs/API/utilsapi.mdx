@@ -181,6 +181,23 @@ Returns the current times.
 print(Faith.GetTime()) --Some numbers lmao
 ```
 
+### KeyBoard.IsDown
+Returns if a key is being held down. Find the key codes here https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+```jsx title="KeyBoard.IsDown Example"
+  
+  while KeyBoard.IsDown(0x57) do --0x57 is the key code for 'W' 
+    --Code want to execute while holding W.
+  end
+  
+  
+```
+### KeyBoard.IsPressed
+Returns if a key was pressed. Find the key codes here https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+```jsx title="KeyBoard.IsPress Example"
+  if KeyBoard.IsPressed(0x57) then --0x57 is the key code for 'W' 
+    --Code want to execute if W is Pressed.
+  end
+```
 ### print
 Prints what you provide on the log, it's able to print almost any type of variable and supports an unlimited amount of arguments.
 
